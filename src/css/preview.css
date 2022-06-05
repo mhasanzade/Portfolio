@@ -1,0 +1,91 @@
+.stay-updated {
+  background-color: transparent;
+  color: white;
+  width: 130px;
+  height: 50px;
+  z-index: 1;
+  border: 2px solid white;
+  position: relative;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.stay-updated p {
+  color: white !important;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.stay-updated::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+  border: none;
+  height: 100%;
+  background: white;
+  -webkit-transition: -webkit-transform .6s ease;
+  transition: -webkit-transform .6s ease;
+  transition: transform .6s ease;
+  transition: transform .6s ease, -webkit-transform .6s ease;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.stay-updated:hover::before {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.stay-updated:hover p {
+  color: #40423f !important;
+}
+
+.line-btn {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.line-btn:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.line-btn::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: .8px;
+  background: white;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.line-btn:hover::before {
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+/*# sourceMappingURL=preview.css.map */

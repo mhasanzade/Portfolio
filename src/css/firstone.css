@@ -1,0 +1,41 @@
+@import url(//db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended);
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Monument Extended';
+}
+
+body p {
+  margin: 0;
+}
+
+body .all {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #161616;
+  overflow: hidden;
+  font-family: 'Monument Extended';
+}
+
+body .all .text-effect {
+  width: 100%;
+  height: 100vh;
+}
+
+body .all .text-effect .text {
+  position: absolute;
+  pointer-events: none;
+  font-size: 6em;
+  -webkit-text-stroke: 1.6px #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #161616;
+  z-index: 1;
+}
+
+body .all .text-effect .text span {
+  color: #fff;
+}
+/*# sourceMappingURL=firstone.css.map */

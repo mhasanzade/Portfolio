@@ -1,0 +1,109 @@
+.flip-card {
+  background-color: transparent;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-card .flip-card-inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #a72929;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2%;
+}
+
+.flip-card .flip-card-inner .flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  color: #ffb400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flip-card .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px 0 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  color: #eee;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+.flip-card .flip-card-back h5 {
+  font-weight: 900;
+  font-size: 25px;
+  color: white;
+}
+
+.flip-card .flip-card-back i {
+  position: absolute;
+  z-index: -40;
+  color: #ffb400;
+  opacity: 0.2;
+  top: 0;
+  right: 0;
+  margin: -60px;
+  font-size: 228px;
+}
+
+.flip-card .flip-card-back p {
+  font-size: 18px;
+  padding-top: 10px;
+  white-space: pre-wrap;
+  color: #121212;
+  padding-bottom: 20px;
+  font-weight: 600;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+/*# sourceMappingURL=item-flip.css.map */

@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.container1{
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    position: relative;
+    overflow: hidden;
+}
+
+.cursor {
+    position: absolute;
+    background: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+        0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(0.8);
+}
+
+.cursor::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image: url("http://mirkozeppieri.emanuelepapale.com/wp-content/uploads/2018/07/project-hover-cursor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    opacity: 0;
+}
+
+.cursor.active {
+    opacity: 1;
+    transform: scale(12);
+}
+
+.cursor.active::before {
+    opacity: 1;
+}
+
+.cursor-follower {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+        0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(4px, 4px);
+}
+
+.cursor-follower.active {
+    opacity: 0.3;
+    transform: scale(0);
+}
+
+/* .portfolio-thumb {
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+}
+
+.portfolio-thumb img {
+    max-width: 360px;
+    opacity: 0.4;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+    transform-origin: 90% center;
+}
+
+.portfolio-item:hover .portfolio-thumb {
+    transform: translateX(-1.75rem);
+}
+
+.portfolio-item:hover .portfolio-thumb img {
+    opacity: 0.8;
+    transform: scale(1.2);
+} */
+
+.left-col, .right-col {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+}
+
+.left-col {
+    background: #d45b48;
+}
+
+.right-col {
+    left: 50%;
+}
+
+.upper {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background: #4f4538;
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 3s;
+}
+
+.bottom {
+    position: absolute;
+    top: 50%;
+    height: 50vh;
+    width: 100%;
+    background: url("https://static.wixstatic.com/media/21b326_4367d433974440088fb267ae3aee08a3~mv2_d_4676_4679_s_4_2.jpg/v1/fill/w_1168,h_1089,al_c,q_85,usm_0.66_1.00_0.01/21b326_4367d433974440088fb267ae3aee08a3~mv2_d_4676_4679_s_4_2.webp") no-repeat 50% 50%;
+    background-size: cover;
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 4.2s;
+}
+.bottom::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: rgba(2, 1, 1, 0.37);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@media(max-width: 900px) {
+    .container1{
+        overflow: visible!important;
+    }
+    .left-col {
+          width: 100%!important;
+    }
+    .right-col {
+          top: 100%!important;
+          left: 0%!important;
+          width: 100%!important;
+    }
+    .about{
+        left: 38%!important;
+        /* width: 100%!important; */
+    }
+    .about p{
+        font-size: 12px!important;
+        /* white-space: nowrap; */
+
+    }
+
+}
+@media(min-width: 900px ) and (max-width: 1300px){
+    .left-col{
+        width: 50%!important;
+
+    }
+    .right-col{
+        width: 50%!important;
+    }
+    .about{
+        left: 40%!important;
+    }
+    .about p{
+        font-size: 12px!important;
+        /* white-space: nowrap; */
+
+    }
+}
+.logo {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    position: fixed;
+    margin: 1.4em;
+    font-weight: lighter;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.year {
+    position: absolute;
+    color: #000;
+    font-family: Poppins;
+    bottom: 8%;
+    font-weight: bolder;
+    transform: rotate(-90deg);
+    left: 0%;
+}
+
+.buy {
+    text-transform: uppercase;
+    font-family: Poppins;
+    /* text-decoration: underline; */
+    position: absolute;
+    right: 0%;
+    /* top: -2.6%; */
+    margin: 1.4em;
+    cursor: pointer;
+    transition: .3s;
+}
+.buy p{
+    color: #f4c8ad;
+    transition: .4s;
+    
+}
+.buy p:hover{
+    color: black!important;
+
+}
+.cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 50%;
+    background: url("../img/me2.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 2.6s;
+}
+.cover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: rgba(2, 1, 1, 0.37);
+    width: 100%;
+    height: 100%;
+}
+
+.data {
+    position: absolute;
+    top: 36%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    color: #f3d2aa;
+    font-family: Poppins;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#name {
+    /* font-weight: 900; */
+    font-family: 'Monument Extended';
+    font-size: 22px;
+    cursor: pointer;
+    /* color: black; */
+}
+
+#artist {
+    font-size: 12px;
+    /* font-weight: 100; */
+}
+
+.play, .next ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0.6;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.658);
+    padding: 2em;
+}
+
+.about {
+    position: absolute;
+    top: 40%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+}
+
+.about h1 {
+    font-weight: bolder;
+    color: #da9e58;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+
+.about p {
+    color: #bcac98;
+    padding: 5px 0;
+    font-family: Poppins;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.about span:hover {
+    text-decoration: underline;
+}
+
+.media {
+    margin-top: 40px;
+}
+
+.media p {
+    color: #6f6457;
+    margin-bottom: 0;
+}
+
+.media ul {
+    position: absolute;
+    list-style: none;
+    left: -24%;
+}
+
+.media ul li {
+    display: inline-block;
+    color: #bcac98;
+    padding-right: 10px;
+}
+
+.next {
+    position: absolute;
+    top: 24%;
+    left: 16%;
+}
+
+.data2 {
+    position: absolute;
+    top: 12%;
+    left: 28%;
+    color: #fff;
+    font-family: Poppins;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.more {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    font-size: 15px;
+    color: #f4c8ad;
+    text-transform: uppercase;
+    font-family: Poppins;
+    text-decoration: underline;
+}
+
+.block-cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 50%;
+}
+
+.block-cover::after {
+   content: '';
+   top: 0;
+   left: 0;
+   position: absolute;
+   width: 0%;
+   height: 100%;
+   background: #4f4538;
+   animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+   animation-delay: 2s;
+}
+
+@keyframes rev-block {
+
+   0% {
+        left: 0;
+        width: 0%;
+   }
+   50% {
+        left: 0;
+        width: 100%;
+   }
+   100% {
+        left: 100%;
+        width: 0%;
+   }
+
+}
+
+@keyframes appear-text {
+
+   0% {
+        opacity: 0;
+   }
+   100% {
+        opacity: 1;
+   }
+
+}
+
+.upper-block {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+}
+
+.upper-block::after {
+   content: '';
+   top: 0;
+   left: 0;
+   position: absolute;
+   width: 0%;
+   height: 100%;
+   background: #9a8b78;
+   animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+   animation-delay: 2.4s;
+}
+
+.block-bottom {
+    position: absolute;
+    top: 50%;
+    height: 50vh;
+    width: 100%;
+}
+
+.block-bottom::after {
+   content: '';
+   top: 0;
+   left: 0;
+   position: absolute;
+   width: 0%;
+   height: 100%;
+   background: #000;
+   animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+   animation-delay: 3.6s;
+}
+@media screen and (max-width: 1300px) and (min-width: 800px) {
+    
+
+}

@@ -1,0 +1,314 @@
+.landingpage {
+  width: 100%;
+  height: 100vh;
+  background-color: #121212;
+  background: url("../img/hero.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.landingpage .container6 {
+  width: 100%;
+  height: 100vh;
+}
+
+.landingpage .container6 .loading-screen {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #0a0a0a;
+  z-index: 2;
+}
+
+.landingpage .container6 .ring {
+  margin: 0%;
+  padding: 0%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 2;
+  width: 40%;
+  opacity: 0.7;
+}
+
+.landingpage .container6 .ringOne img {
+  -webkit-animation: rotateFirstRing 2s linear infinite;
+          animation: rotateFirstRing 2s linear infinite;
+}
+
+.landingpage .container6 .ringTwo img {
+  -webkit-animation: rotateFirstRing 8s linear infinite;
+          animation: rotateFirstRing 8s linear infinite;
+}
+
+.landingpage .container6 img {
+  width: 100%;
+  background: transparent;
+}
+
+.landingpage .container6 .header {
+  position: absolute;
+  top: 46%;
+  left: 36%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.landingpage .container6 .header .m17 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+
+.landingpage .container6 .header .m17 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.landingpage .container6 .header .m17 .text-wrapper .letters {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.landingpage .container6 .header h1 {
+  color: white;
+  font-family: 'Monument Extended';
+  font-weight: bolder !important;
+  font-size: 46px !important;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.landingpage .container6 .header #tagline {
+  width: 640px;
+}
+
+.landingpage .container6 .header p {
+  color: #5f5f5f;
+  font-weight: 200;
+  font-family: "Roboto";
+  line-height: 28px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.landingpage .container6 .header .buttons {
+  margin-top: 40px;
+}
+
+.landingpage .container6 .header .buttons button {
+  margin-right: 10px !important;
+  padding: 14px 30px;
+  border: none;
+  color: #fff;
+  font-size: 14px !important;
+  letter-spacing: 4px;
+  font-weight: 400;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.landingpage .container6 .header .buttons #one {
+  background: none;
+  border: 0.3pt solid rgba(255, 255, 255, 0.3);
+}
+
+.landingpage .container6 .header .buttons #one::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+  border: none;
+  height: 100%;
+  background: #c2b299;
+  -webkit-transition: -webkit-transform .6s ease;
+  transition: -webkit-transform .6s ease;
+  transition: transform .6s ease;
+  transition: transform .6s ease, -webkit-transform .6s ease;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.landingpage .container6 .header .buttons #one:hover::before {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.landingpage .container6 .header .buttons #one:hover {
+  color: #121212;
+}
+
+.landingpage .container6 .header .buttons #two {
+  background: linear-gradient(135deg, #924040 0%, #a72929 100%);
+  position: relative;
+}
+
+.landingpage .container6 .header .buttons #two:hover {
+  color: #fff;
+}
+
+.landingpage .container6 .header .buttons #two:hover::before {
+  opacity: 1;
+}
+
+.landingpage .container6 .header .buttons #two::before {
+  background: linear-gradient(115deg, #a72929 0%, #a85f5f 100%);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: -1;
+}
+
+.landingpage .container6 .media {
+  position: fixed;
+  top: 38%;
+  z-index: 200;
+  right: 7%;
+}
+
+.landingpage .container6 .media ul {
+  position: absolute;
+  list-style: none;
+}
+
+.landingpage .container6 .media ul li {
+  color: grey;
+  padding: 12px 0;
+  display: inline-block !important;
+}
+
+.landingpage .container6 .media ul li:hover .menu-icon {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  color: white;
+}
+
+.landingpage .container6 .media ul li .menu-icon {
+  color: grey;
+  font-size: 20px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.landingpage .container6 .media ul li .menu-icon:hover {
+  color: white;
+}
+
+.landingpage .bottom-text {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  font-size: 18px;
+  font-family: monospace;
+  margin-left: 2em;
+  bottom: 40px;
+}
+
+.landingpage .copyright {
+  position: absolute;
+  z-index: 1;
+  color: grey;
+  font-size: 15px;
+  right: 0;
+  font-family: Roboto;
+  font-weight: 100;
+  margin-right: 2em;
+  bottom: 40px;
+}
+
+@-webkit-keyframes rotateFirstRing {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateFirstRing {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 820px) {
+  .header {
+    left: 50% !important;
+  }
+  .header #tagline {
+    display: none;
+  }
+  .header button {
+    margin-bottom: 20px;
+  }
+  .ring {
+    left: 51% !important;
+  }
+  .media {
+    right: 17% !important;
+  }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 800px) {
+  .header {
+    left: 50% !important;
+  }
+  .header button {
+    margin-bottom: 20px;
+  }
+  .media {
+    right: 10% !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .navbar {
+    width: 16%;
+  }
+  .navbar .nav {
+    left: 16%;
+  }
+  .navbar .nav .nav-item a {
+    font-size: 40px;
+    letter-spacing: 0;
+  }
+  .navbar .nav .nav-item::after {
+    display: none;
+  }
+}
+/*# sourceMappingURL=landingpage.css.map */

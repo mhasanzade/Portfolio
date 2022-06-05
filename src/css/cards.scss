@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.col-9 {
+    width: 100%;
+}
+
+.finally {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+
+    nav {
+        position: relative !important;
+    }
+
+    .py-4 {
+        flex-direction: column;
+
+        .hepsi {
+            flex-direction: column;
+            align-items: center;
+            background-color: #000;
+            margin: 0;
+
+            .items {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+
+                .trio {
+                    padding: 20px 0;
+                }
+
+                .order {
+                    display: flex;
+                    padding: 22px 32px;
+                    flex-direction: column;
+                    text-align: left;
+                    border: 2px solid #e7e7e7;
+                    background-color: #000;
+
+                    h3 {
+                        font-size: 1.1rem;
+                        font-weight: 900;
+                        margin-bottom: 2em;
+                        padding-left: .5rem;
+                        color: white;
+                    }
+
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 700;
+                        padding-left: .5rem;
+                        padding-bottom: 1rem;
+                        border-bottom: 1px solid #e7e7e7;
+                        color: white;
+                    }
+
+                    table {
+                        background-color: #000;
+
+                        .td-img {
+                            width: 9rem;
+                            height: 6rem;
+                        }
+                    }
+                }
+
+                h2 {
+                    color: white;
+                    font-size: 1.45rem;
+                    font-weight: 700;
+                }
+
+                h5 {
+                    font-size: 1.125rem;
+                    color: #444;
+                    font-weight: 600;
+                    margin: 30px 0;
+                    display: flex;
+                    text-align: center;
+                }
+
+                .d-flex {
+                    tbody {
+                        tr {
+
+                            .td-item-name {
+                                font-weight: 600;
+                                color: white;
+                            }
+
+                            .td-item-price {
+                                color: #e7e7e7;
+                            }
+
+                            .item-quantity {
+                                font-weight: 500;
+                                color: #6b5b5bbd;
+                                padding: 0 10px;
+                            }
+
+                            td {
+                                .btn-danger {
+                                    background-color: transparent;
+                                    color: #a72929;
+                                    transition: .3s;
+
+                                    &:hover {
+                                        background-color: #a72929;
+                                        color: #000;
+                                    }
+                                }
+
+                                .btn-success {
+                                    background-color: transparent;
+                                    color: #13653f;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .total-price {
+                margin: 15px 0;
+                border-bottom: 1px solid #e7e7e7;
+                border-bottom: 1px solid #e7e7e7;
+
+                h1 {
+                    font-size: 2.1rem;
+                    color: white;
+                    font-weight: 600;
+                    padding: 9px 0;
+                    font-family: "poppins";
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 600px) {
+    .btn-danger {
+        font-size: 15px;
+    }
+
+    table {
+        .td-img {
+            width: 6rem !important;
+            height: 5rem !important;
+        }
+    }
+
+}
