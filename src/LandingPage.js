@@ -137,9 +137,6 @@ export default function Home() {
             ease: Expo.easeInOut
       },"-=5");
 
-// var textWrapper = document.querySelector('.ml7 .letters');
-// textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
-
 
 anime.timeline({loop: false})
   .add({
@@ -180,9 +177,6 @@ $(document).on("click", ".navx-item a", function () {
 });
 
     });
-    // <Router>
-    //     <Route path="./Imagehover" component={Imagehover}/>
-    // </Router>
 
     return (
         <div>
@@ -242,11 +236,6 @@ $(document).on("click", ".navx-item a", function () {
                     </div>
                 </div>
 
-
-
-
-
-
                 <div className="header">
 
                     <h1 className="m17" id="title">
@@ -269,14 +258,6 @@ $(document).on("click", ".navx-item a", function () {
                     </div>
 
                 </div>
-
-                {/* <div className="bottom-text">
-                    +0.0001dv
-                </div> */}
-
-                {/* <div className="copyright">
-                    2021 by MH. All rights reserved.
-                </div> */}
 
                 <div className="media">
                     <ul>
