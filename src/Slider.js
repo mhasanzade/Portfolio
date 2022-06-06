@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import "./css/slider.css";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import $ from 'jquery';
 import "./slick.js";
-// import { render } from '@testing-library/react';
 
 
 export default function SimpleSlider() {

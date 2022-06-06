@@ -100,8 +100,8 @@ const Card = () => {
                     </div>
 
                     <div className="col-auto buttons mb-4 mt-2 ms-auto d-flex align-items-center justify-content-center w-100">
-                        <button className="btn btn-dark m-2" onClick={() => emptyCart()}>Clear Cart</button>
-                        <button className="btn btn-buy m-2" >Buy Now</button>
+                        <button className="btn btn-buy m-2" onClick={() => emptyCart()}>Clear Cart</button>
+                        <button className="btn btn-dark m-2" >Buy Now</button>
                     </div>
                 </div>
             </selection>

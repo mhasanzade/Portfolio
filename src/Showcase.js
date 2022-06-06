@@ -26,15 +26,6 @@ export default function FirstOne() {
           });
       });
 
-//       TweenMax.from(".block", 2, {
-//         width: "0%",
-//         // delay: 2.2,
-//         // y:20,
-//         // opacity:0,
-//         ease: Expo.easeInOut
-//   })
-
-
       });
     return (
      

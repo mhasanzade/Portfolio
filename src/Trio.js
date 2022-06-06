@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import FirstOne from './FirstOne';
 import Imagehover from './Imagehover';
 import Home from './LandingPage';
-import About from './About';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
